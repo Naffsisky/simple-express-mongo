@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/mahasiswa
+
+### GET All Mahasiswa
+GET http://localhost:3000/api/mahasiswa/all
+
+### GET Mahasiswa By Id
+GET http://localhost:3000/api/mahasiswa/65d4675614492741cbf6b3c3
+
+### Create Mahasiswa
+POST http://localhost:3000/api/mahasiswa
+Content-Type: application/json
+
+{
+    "nama_lengkap" : "Asup",
+    "jenis_kelamin" : "L",
+    "tanggal_lahir" : "2003-07-07",
+    "tempat_lahir" : "Jakarta",
+    "alamat" : "Indonesia"
+}
+
+### Update Mahasiswa
+PUT http://localhost:3000/api/mahasiswa/65d46853253eef0fb858f1af
+Content-Type: application/json
+
+{
+    "nama_lengkap" : "Clara Clayton",
+    "jenis_kelamin" : "P",
+    "tanggal_lahir" : "2003-07-07",
+    "tempat_lahir" : "New York",
+    "alamat" : "USA"
+}
+
+### Delete Mahasiswa
+DELETE http://localhost:3000/api/mahasiswa/65d46853253eef0fb858f1af
